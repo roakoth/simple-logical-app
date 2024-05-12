@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS logical property</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+  <div class="language-switcher">
+    <label for="language-select">Select Language:</label>
+    <select id="language-select" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="ar">Arabic</option>
+      <option value="ja">Japanese</option>
+    </select>
+  </div>
+
+
+        <section id="english-content" class="english-section">
+            <h2>English Section</h2>
+            <p>
+                The CSS logical properties and values module introduces logical properties and values that provide the ability to control layout through logical, 
+                rather than physical, direction and dimension mappings.
+            </p>
+        </section>
+
+        <section id="arabic-content" lang="ar" dir="rtl" class="arabic-section">
+            <h2>القسم العربي</h2>
+            
+            <p>
+يقدم وحدة خصائص وقيم الـ CSS المنطقية خصائص وقيمًا توفر القدرة على التحكم في التخطيط من خلال تحديد منطقي، بدلاً من جسدي، لاتجاه وتعيينات الأبعاد
+            </p>
+        </section>
+
+        <section id="japanese-content" lang="ja" class="japanese-section">
+            <h2>日本語セクション</h2>
+            <p>
+                CSS の論理プロパティと値モジュールは、物理的ではなく論理的な方向と寸法のマッピングを通じてレイアウトを制御する機能を提供する論理プロパティと値を導入します。
+            </p>
+            
+        </section>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
